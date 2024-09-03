@@ -124,7 +124,7 @@ public class Members extends User {
         } else if(event.getSource()==CalculateYourFine){
             memberToPass.CalculateYourFine(event);
         } else if(event.getSource()==PayYourFine){
-            memberToPass.ProceedInDays(event);
+            memberToPass.PayYourFine(event);
         } else if(event.getSource()==ProceedInDays){
             memberToPass.ProceedInDays(event);
         }
