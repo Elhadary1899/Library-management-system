@@ -1,0 +1,51 @@
+.glass{
+    -fx-background-image: url("/wallpaper.jpg");
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+}
+/* Custom Alert Dialog */
+.custom-alert {
+    -fx-background-color: rgba(33, 33, 33, 0.9); /* Dark background with slight transparency */
+    -fx-border-color: #E07A5F; /* Warm orange border */
+    -fx-border-width: 2px;
+    -fx-border-radius: 8px;
+    -fx-padding: 10px;
+}
+.custom-dialog {
+    -fx-background-color: rgba(33, 33, 33, 0.9); /* Dark background with slight transparency */
+    -fx-border-color: #E07A5F; /* Warm orange border */
+    -fx-border-width: 2px;
+    -fx-border-radius: 8px;
+    -fx-padding: 10px;
+}
+
+/* Alert Dialog Content */
+.dialog-pane .content {
+    -fx-font-size: 14px;
+    -fx-text-fill: #FAF3E0; /* Soft white text */
+    -fx-font-family: "Georgia";
+}
+
+/* Buttons inside the alert */
+.dialog-pane .button-bar .button {
+    -fx-background-color: #E07A5F; /* Warm orange */
+    -fx-text-fill: #FAF3E0; /* Soft white */
+    -fx-font-weight: bold;
+    -fx-border-radius: 5px;
+}
+
+/* Style the text input field */
+.dialog-pane .content .text-field {
+    -fx-pref-width: 200px; /* Adjust width */
+    -fx-background-color: #FAF3E0; /* Match the theme */
+    -fx-text-fill: #000; /* Black text */
+    -fx-border-color: #E07A5F;
+    -fx-border-radius: 5px;
+}
+
+/* Style the prompt text (default placeholder text) */
+.dialog-pane .content .text-field:focused {
+    -fx-prompt-text-fill: rgba(0, 0, 0, 0.6); /* Slightly dimmed black */
+}
+
