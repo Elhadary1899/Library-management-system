@@ -61,13 +61,13 @@ By addressing these challenges, our Library Management System transforms the tra
 The first challenge was to analyze the business requirements and design an efficient database structure. We created an Entity-Relationship Diagram (ERD) that accurately represents the relationships between different entities in the system.
 <br>
 **Final ERD Design:**
-![ERD](https://github.com/user-attachments/assets/2807f31a-1810-41a2-8317-5539944dee6a)
+![ERD](https://raw.githubusercontent.com/Elhadary1899/Library-management-system-GUI-using-JavaFX/main/ERD%20&%20Schema/ERD.png)
 
 #### 2️⃣ Mapping Entities into Tables
 Once the ERD was finalized,  we needed to map entities into relational tables, ensuring proper normalization to enhance efficiency, integrity, and performance.
 <br>
 **Final Database Schema:**
-![image](https://github.com/user-attachments/assets/ed8f7659-3b23-4992-904b-a7bbb22dbf81)
+![Schema](https://raw.githubusercontent.com/Elhadary1899/Library-management-system-GUI-using-JavaFX/main/ERD%20&%20Schema/Schema.jpg)
 
 #### 3️⃣ Database Implementation & Population
 At this stage, Maram implemented the database using MS SQL Server, ensuring a structured and optimized setup. The implementation included:
