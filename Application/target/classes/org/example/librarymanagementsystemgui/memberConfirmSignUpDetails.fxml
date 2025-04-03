@@ -32,12 +32,15 @@
                     <children>
                         <HBox alignment="BOTTOM_CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1">
                             <children>
-                                <ImageView fitHeight="182.0" fitWidth="167.0" pickOnBounds="true" preserveRatio="true">
+                                <ImageView fitHeight="134.0" fitWidth="157.0" pickOnBounds="true" preserveRatio="true">
                                     <image>
                                         <Image url="@book.png" />
                                     </image>
                                 </ImageView>
                             </children>
+                     <padding>
+                        <Insets bottom="50.0" />
+                     </padding>
                         </HBox>
                   <VBox prefHeight="206.0" prefWidth="282.0" spacing="20.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
                      <children>
