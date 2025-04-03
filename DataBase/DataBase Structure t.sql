@@ -54,7 +54,7 @@ VALUES
 ('J.K. Rowling'), ('Stephen King'), ('George R.R. Martin'), ('J.R.R. Tolkien'), ('Agatha Christie'),
 ('Isaac Asimov'), ('Dan Brown'), ('Margaret Atwood'), ('Haruki Murakami'), ('Jane Austen'),
 ('Ernest Hemingway'), ('Mark Twain'), ('Charles Dickens'), ('F. Scott Fitzgerald'), ('Leo Tolstoy'),
-('Fyodor Dostoevsky'), ('Gabriel García Márquez'), ('James Joyce'), ('Virginia Woolf'), ('Oscar Wilde');
+('Fyodor Dostoevsky'), ('Gabriel GarcÃ­a MÃ¡rquez'), ('James Joyce'), ('Virginia Woolf'), ('Oscar Wilde');
 
 
 -- **************************************************************************
@@ -221,9 +221,15 @@ CREATE TABLE BorrowRecords (
     TotalPrice DECIMAL(10,2), -- Total price for borrowing
     LateDays INT DEFAULT 0, -- Number of days the book is overdue
     FineAmount DECIMAL(10,2) DEFAULT 0.0, -- Fine amount for overdue books
-    PRIMARY KEY (BookISBN, CopyNum, UserID), -- Composite primary key
+    PRIMARY KEY (BookISBN, CopyNum, UserID, ReturnDate), -- Composite primary key
     FOREIGN KEY (BookISBN, CopyNum) REFERENCES BookCopy(BookISBN, CopyNum) ON DELETE CASCADE
 );
+
+
+
+
+ALTER TABLE BorrowRecords
+DROP CONSTRAINT PK__BorrowRe__7E983CA03A4EC269; 
 
 -- Insert data into BorrowRecords
 INSERT INTO BorrowRecords (BookISBN, CopyNum, UserID, BorrowDate, DueDate, TotalPrice)
